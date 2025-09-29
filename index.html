@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Wedding Invite</title>
+    <meta name="description" content="Join us to celebrate our wedding." />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="hero">
+        <div class="video-side">
+          <video id="heroVideo" src="media/teaser.mp4" autoplay muted loop playsinline></video>
+          <button id="soundBtn" class="sound-btn">🔊 Sound On</button>
+        </div>
+        <div class="content-side">
+            <h1>Ժաննա & Արման </h1>
+            <h3>Սիրելի ընկերներ և բարեկամներ</h3>
+            <p class="intro">
+                Սիրով հրավիրում ենք Ձեզ կիսելու մեր կյանքի ամենագեղեցիկ և անմոռանալի օրը` մեր հարսանիքը
+              </p>
+            <h3>Միջոցառմանը մնաց</h3>
+            <div class="countdown" aria-label="Countdown to October 26, 2026">
+            <div class="cd-box"><span class="cd-num" id="cd-days">0</span><span class="cd-label">Days</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-box"><span class="cd-num" id="cd-hours">0</span><span class="cd-label">Hours</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-box"><span class="cd-num" id="cd-mins">0</span><span class="cd-label">Mins</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-box"><span class="cd-num" id="cd-secs">0</span><span class="cd-label">Secs</span></div>
+            </div>
+
+            <p id="cd-message" class="cd-message" hidden>It’s today! 💍</p>
+
+          </div> 
+      </section> 
+      <section class="spacer"></section>
+      <section class="date-block">
+        <h2 class="wedding-date">26 / 06 / 25</h2>
+        <p class="wedding-subtitle">Գեղեցիկ օր, երբ սկսվում է մեր կյանքի նոր ու համատեղ ճանապարհը</p>
+      </section>
+        <section class="full-photo">
+        <img src="media/paper.jpg" alt="Nkar 1" />
+        </section>
+        <section class="spacer-sm"></section>
+
+        <section class="schedule v">
+            <h2 class="schedule-title">Ժամանակացույց</h2>
+          
+            <div class="vtrack">          <!-- NEW wrapper -->
+            <div class="vline"></div>
+          
+            <!-- 14:30 · Ceremony -->
+            <div class="vitem left">
+              <div class="vicon">
+                <!-- rings -->
+                <img src="media/rings-svg.svg" alt="Rings icon">
+                <!-- <svg viewBox="0 0 64 64" width="44" height="44" fill="none" aria-hidden="true">
+                  <circle cx="22" cy="34" r="12" stroke="#7f6a54" stroke-width="2.5"/>
+                  <circle cx="42" cy="34" r="12" stroke="#b69b7c" stroke-width="2.5"/>
+                  <path d="M36 18l4-6 6 4" stroke="#b69b7c" stroke-width="2.5" stroke-linecap="round"/>
+                </svg> -->
+              </div>
+              <div class="vtext">
+                <div class="vtime">15:00</div>
+                <h3 class="vt">Պսակադրություն</h3>
+                <p class="vd">
+                    <a href="https://www.google.com/maps/place/Saghmosavanq/@40.3805392,44.3941426,17z/data=!3m1!4b1!4m6!3m5!1s0x406a83a65b5f5b23:0x2c15637a87b6ecee!8m2!3d40.3805351!4d44.3967175!16s%2Fm%2F027tzt8?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-link">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1118 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                      </svg>
+                      Սաղմոսավանք վանական համալիր
+                    </a>
+                  </p>
+                  
+              </div>
+            </div>
+          
+            <!-- 17:30 · Arrival / Photos -->
+            <div class="vitem right">
+              <div class="vicon">
+                <!-- location pin -->
+                <img src="media/champagne.svg" alt="Champagne icon">
+                <!-- <svg viewBox="0 0 64 64" width="44" height="44" fill="none" aria-hidden="true">
+                  <path d="M32 56s16-17 16-28a16 16 0 10-32 0c0 11 16 28 16 28z" stroke="#b69b7c" stroke-width="2.5"/>
+                  <circle cx="32" cy="28" r="5" stroke="#7f6a54" stroke-width="2.5"/>
+                </svg> -->
+              </div>
+              <div class="vtext">
+                <div class="vtime">17:30</div>
+                <h3 class="vt">Հարսանյաց խնջույք</h3>
+                <p class="vd">
+                    <a href="https://www.google.com/maps/place/Lianna+Garden+Hall/@40.1649554,44.3894539,17z/data=!3m1!4b1!4m9!3m8!1s0x406abf20058b7395:0xc8881d319e6d89ca!5m2!4m1!1i2!8m2!3d40.1649513!4d44.3920288!16s%2Fg%2F11ktyzthbv?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-link">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1118 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                      </svg>
+                      Liana Garden Hall
+                    </a>
+                  </p>
+              </div>
+            </div>
+
+        </div>
+        <div class="spasum">
+            <h3>Սիրով սպասում ենք</h3>
+        </div>
+        
+    </section>
+
+        <section class="rsvp-wide">
+            <div class="rsvp-card">
+              <h2 class="rsvp-heading">Խնդրում ենք լրացնել Ձեր մասնակցության մասին մինչև Հոկտեմբերի 15ը</h2>
+              <p class="rsvp-sub">Սիրով սպասում ենք Ձեր պատասխանին, որպեսզի լավագույնս կազմակերպենք երեկոն։</p>
+          
+              <form id="rsvpForm" class="rsvp-form">
+                <!-- Attendance (pill radios) -->
+                <fieldset class="field">
+                  <legend>Կկարողանա՞ք մասնակցել</legend>
+                  <label class="pill"><input type="radio" name="attending" value="Yes" required><span>Այո, սիրով կմասնակցեմ</span></label>
+                  <label class="pill"><input type="radio" name="attending" value="No"><span>Ցավոք, չեմ կարող մասնակցել</span></label>
+                </fieldset>
+          
+                <!-- Side (pill radios inline) -->
+                <fieldset class="field field-inline">
+                  <legend>Ո՞ր կողմից եք</legend>
+                  <label class="pill"><input type="radio" name="side" value="Bride" required><span>Փեսայի</span></label>
+                  <label class="pill"><input type="radio" name="side" value="Groom"><span>Հարսի</span></label>
+                </fieldset>
+          
+                <div class="grid-2">
+                  <label class="input">
+                    <span>Անուն, Ազգանուն</span>
+                    <input name="name" type="text" placeholder="Անուն Ազգանուն" required>
+                  </label>
+          
+                  <label class="input">
+                    <span>Հյուրերի քանակ</span>
+                    <input name="guests" type="number" min="1" max="10" placeholder="1" required>
+                  </label>
+                </div>
+          
+                <label class="input">
+                  <span>Մեկնաբանություն</span>
+                  <input name="note" type="text" placeholder="Սննդի նախընտրություններ, նշումներ…">
+                </label>
+          
+                <button class="btn" type="submit">Պատասխանել</button>
+                <p class="form-status" id="formStatus" aria-live="polite"></p>
+              </form>
+            </div>
+          </section>
+        
+          <section class="fullwidth-img">
+            <img src="media/end.jpg" alt="Wedding moment" />
+          </section>
+
+          
+          <section class="closing">
+            <div class="closing-inner">
+              <h2 class="closing-thank">Շնորհակալություն ❤️</h2>
+              <p class="closing-sub">
+                Եթե մասնակցելու եք, միացեք մեր Telegram խմբին<br>
+                որպեսզի կիսվեք լուսանկարներով և տեսանյութերով հարսանիքից։
+              </p>
+              <a class="closing-btn" href="https://t.me/+-Mt3NWJz5L0xZDYy" target="_blank" rel="noopener">
+                Միանալ Telegram խմբին
+              </a>
+            </div>
+          </section>
+          
+          
+              
+          
+          </section>
+             
+    <script>
+        const video = document.getElementById('heroVideo');
+        const btn = document.getElementById('soundBtn');
+      
+        btn.addEventListener('click', () => {
+          if (video.muted) {
+            video.muted = false;      
+            btn.textContent = "🔇 Mute";
+          } else {
+            video.muted = true;
+            btn.textContent = "🔊 Sound On";
+          }
+        });
+        const target = new Date(2025, 9, 26, 0, 0, 0); // Months are 0-based: 9 = October
+
+        const elDays = document.getElementById('cd-days');
+        const elHours = document.getElementById('cd-hours');
+        const elMins = document.getElementById('cd-mins');
+        const elSecs = document.getElementById('cd-secs');
+        const elMsg  = document.getElementById('cd-message');
+
+        function pad(n){ return String(n).padStart(2,'0'); }
+
+        function tick(){
+            const now = new Date();
+            let diff = target - now;
+
+            if (diff <= 0){
+            // Reached the day
+            elDays.textContent = '00';
+            elHours.textContent = '00';
+            elMins.textContent = '00';
+            elSecs.textContent = '00';
+            elMsg.hidden = false;
+            clearInterval(timer);
+            return;
+            }
+
+            const sec = Math.floor(diff / 1000) % 60;
+            const min = Math.floor(diff / (1000*60)) % 60;
+            const hr  = Math.floor(diff / (1000*60*60)) % 24;
+            const day = Math.floor(diff / (1000*60*60*24));
+
+            elDays.textContent = pad(day);
+            elHours.textContent = pad(hr);
+            elMins.textContent  = pad(min);
+            elSecs.textContent  = pad(sec);
+        }
+
+        tick();
+        const timer = setInterval(tick, 1000);
+
+        const ENDPOINT = 'https://script.google.com/macros/s/AKfycbyaQYrm09ZShy0hE6vRMf54DD-WIwYASWhtszmF2IEUI613MwWfCVDK4_OwIAOx69Px/exec';
+
+        const form = document.getElementById('rsvpForm');
+  const statusEl = document.getElementById('formStatus');
+  const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (submitBtn) submitBtn.disabled = true;
+      if (statusEl) statusEl.textContent = 'Ուղարկվում է…';
+
+      const fd = new FormData(form); // <-- no headers, simple request
+
+      try {
+        // Try normal CORS first (works on GitHub Pages / localhost)
+        const res = await fetch(ENDPOINT, { method: 'POST', body: fd });
+
+        // If you don’t need to read the response, this is enough.
+        // Optionally: await res.text();
+
+        if (statusEl) statusEl.textContent = 'Շնորհակալություն! Ձեր պատասխանն ընդունվեց։';
+        form.reset();
+      } catch (err) {
+        // Fallback: last resort for strict environments
+        try {
+          await fetch(ENDPOINT, { method: 'POST', body: fd, mode: 'no-cors' });
+          if (statusEl) statusEl.textContent = 'Շնորհակալություն! Ձեր պատասխանն ընդունվեց։';
+          form.reset();
+        } catch (e2) {
+          console.error(e2);
+          if (statusEl) statusEl.textContent = 'Խնդիր առաջացավ։ Խնդրում ենք փորձել կրկին։';
+        }
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+      }
+    });
+  }
+  // Wax Seal Animation
+function openWaxSeal() {
+    const container = document.getElementById('sealContainer');
+    const overlay = document.getElementById('sealOverlay');
+    
+    container.classList.add('opened');
+    
+    setTimeout(() => {
+        overlay.classList.add('hidden');
+    }, 2000);
+}
+
+// Auto-open after 1 second (optional - remove if you want manual click only)
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        // Uncomment the line below to auto-open
+        // openWaxSeal();
+    }, 1000);
+});
+        
+      </script>
+      
+      
+</body>
+<!-- Wax Seal Animation -->
+<div class="seal-overlay" id="sealOverlay">
+    <div class="seal-split-container" id="sealContainer">
+        <div class="seal-split-half seal-split-left"></div>
+        <div class="seal-split-half seal-split-right"></div>
+        
+        <div class="wax-seal" onclick="openWaxSeal()">
+            <svg viewBox="0 0 32 32" width="150" height="150">
+                <defs>
+                    <filter id="wax">
+                        <feTurbulence type="turbulence" baseFrequency="0.2" numOctaves="2" result="turbulence" seed="1701"/>
+                        <feGaussianBlur in="turbulence" stdDeviation="0.6" result="turbulence"/>
+                        <feMorphology in="turbulence" operator="dilate" radius="11" result="dilated"/>
+                        <feDisplacementMap in="SourceGraphic" in2="dilated" scale="3.6" xChannelSelector="R" yChannelSelector="G" result="blob"/>
+                        <feGaussianBlur in="turbulence" stdDeviation="1.4" result="droplet-turbulence"/>
+                        <feDisplacementMap in="SourceGraphic" in2="droplet-turbulence" scale="90" result="droplet"/>
+                        <feComposite in="droplet" in2="blob" operator="over" result="wax"/>
+                        <feDropShadow in="droplet" dx="-0.3" dy="-0.3" stdDeviation="0" flood-color="#8B4513" flood-opacity="1" result="droplet-highlight"/>
+                        <feDropShadow in="droplet" dx="0.3" dy="0.3" stdDeviation="0" flood-color="#4A2C17" flood-opacity="1" result="droplet-shadow"/>
+                        <feDropShadow in="blob" dx="-0.6" dy="-0.6" stdDeviation="0" flood-color="#8B4513" flood-opacity="1" result="blob-highlight"/>
+                        <feDropShadow in="blob" dx="0.6" dy="0.6" stdDeviation="0" flood-color="#4A2C17" flood-opacity="1" result="blob-shadow"/>
+                        <feMerge>
+                            <feMergeNode in="droplet-shadow"/>
+                            <feMergeNode in="blob-shadow"/>
+                            <feMergeNode in="droplet-highlight"/>
+                            <feMergeNode in="blob-highlight"/>
+                            <feMergeNode in="wax"/>
+                        </feMerge>
+                    </filter>
+                    <filter id="deboss">
+                        <feDropShadow dx="-0.4" dy="-0.4" stdDeviation="0" flood-color="#4A2C17"/>
+                        <feDropShadow dx="0.4" dy="0.4" stdDeviation="0" flood-color="#8B4513"/>
+                    </filter>
+                    <filter id="emboss">
+                        <feDropShadow dx="0.25" dy="0.25" stdDeviation="0" flood-color="#4A2C17"/>
+                        <feDropShadow dx="-0.25" dy="-0.25" stdDeviation="0" flood-color="#8B4513"/>
+                    </filter>
+                </defs>
+                <circle cx="50%" cy="50%" r="36%" fill="#654321" filter="url(#wax)"/>
+                <circle cx="50%" cy="50%" r="27%" fill="none" stroke="#654321" stroke-width="1" filter="url(#deboss)"/>
+                <circle cx="50%" cy="50%" r="25.3%" fill="none" stroke="#654321" stroke-width="0.5" filter="url(#emboss)"/>
+                <text x="50%" y="53%" dominant-baseline="middle" text-anchor="middle" fill="#654321" font-family="georgia" font-size="8.5" font-weight="bold" filter="url(#emboss)">Ժ&amp;Ա</text>
+            </svg>
+        </div>
+    </div>
+    <div class="seal-click-text">Սեղմեք կնիքը բացելու համար</div>
+</div>
+</html>
