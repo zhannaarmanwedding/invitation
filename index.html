@@ -1,44 +1,55 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Our Wedding Invite</title>
     <meta name="description" content="Join us to celebrate our wedding." />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=1.0.0" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <section class="hero">
         <div class="video-side">
-          <video id="heroVideo" src="media/teaser.mp4" autoplay muted loop playsinline></video>
+          <video id="heroVideo" src="media/teaser_bw.mp4" autoplay muted loop playsinline></video>
           <button id="soundBtn" class="sound-btn">🔊 Sound On</button>
         </div>
         <div class="content-side">
-            <h1>Ժաննա & Արման </h1>
-            <h3>Սիրելի ընկերներ և բարեկամներ</h3>
-            <p class="intro">
+            <h1 data-aos="fade-left">Ժաննա & Արման </h1>
+            <div class="text-with-reflection" data-text="Սիրելի ընկերներ և բարեկամներ">
+              <h3 class="friends-fam" data-aos="fade-up">Սիրելի ընկերներ և բարեկամներ</h3>
+            </div>
+            
+            <p class="intro" data-aos="fade-up">
                 Սիրով հրավիրում ենք Ձեզ կիսելու մեր կյանքի ամենագեղեցիկ և անմոռանալի օրը` մեր հարսանիքը
               </p>
-            <h3>Միջոցառմանը մնաց</h3>
+              <div class="text-with-reflection" data-text="Միջոցառմանը մնաց">
+                <h3 class="friends-fam" data-aos="fade-up">Միջոցառմանը մնաց</h3>
+              </div>
+           
             <div class="countdown" aria-label="Countdown to October 26, 2026">
-            <div class="cd-box"><span class="cd-num" id="cd-days">0</span><span class="cd-label">Days</span></div>
+            <div class="cd-box"><span class="cd-num" id="cd-days">0</span><span class="cd-label">Օր</span></div>
             <div class="cd-sep">:</div>
-            <div class="cd-box"><span class="cd-num" id="cd-hours">0</span><span class="cd-label">Hours</span></div>
+            <div class="cd-box"><span class="cd-num" id="cd-hours">0</span><span class="cd-label">Ժամ</span></div>
             <div class="cd-sep">:</div>
-            <div class="cd-box"><span class="cd-num" id="cd-mins">0</span><span class="cd-label">Mins</span></div>
+            <div class="cd-box"><span class="cd-num" id="cd-mins">0</span><span class="cd-label">Րոպե</span></div>
             <div class="cd-sep">:</div>
-            <div class="cd-box"><span class="cd-num" id="cd-secs">0</span><span class="cd-label">Secs</span></div>
+            <div class="cd-box"><span class="cd-num" id="cd-secs">0</span><span class="cd-label">Վայրկյան</span></div>
             </div>
 
-            <p id="cd-message" class="cd-message" hidden>It’s today! 💍</p>
+            <p id="cd-message" class="cd-message" hidden>Այսօր է! 💍</p>
 
           </div> 
       </section> 
       <section class="spacer"></section>
       <section class="date-block">
-        <h2 class="wedding-date">26 / 06 / 25</h2>
-        <p class="wedding-subtitle">Գեղեցիկ օր, երբ սկսվում է մեր կյանքի նոր ու համատեղ ճանապարհը</p>
+        <h2 class="wedding-date" data-aos="fade-up-left">26 / 09 / 25</h2>
+        <p class="wedding-subtitle" data-aos="fade-up">Գեղեցիկ օր, երբ սկսվում է մեր կյանքի նոր ու համատեղ ճանապարհը</p>
       </section>
         <section class="full-photo">
         <img src="media/paper.jpg" alt="Nkar 1" />
@@ -46,7 +57,10 @@
         <section class="spacer-sm"></section>
 
         <section class="schedule v">
-            <h2 class="schedule-title">Ժամանակացույց</h2>
+          <div class="text-with-reflection" data-text="Ժամանակացույց">
+            <h2 class="schedule-title" data-aos="fade-up-left">Ժամանակացույց</h2>
+          </div>
+            
           
             <div class="vtrack">          <!-- NEW wrapper -->
             <div class="vline"></div>
@@ -71,7 +85,7 @@
                         <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1118 0z"/>
                         <circle cx="12" cy="10" r="3"/>
                       </svg>
-                      Սաղմոսավանք վանական համալիր
+                      📍 Սաղմոսավանք վանական համալիր
                     </a>
                   </p>
                   
@@ -97,7 +111,7 @@
                         <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1118 0z"/>
                         <circle cx="12" cy="10" r="3"/>
                       </svg>
-                      Liana Garden Hall
+                      📍 Liana Garden Hall
                     </a>
                   </p>
               </div>
@@ -160,7 +174,7 @@
           
           <section class="closing">
             <div class="closing-inner">
-              <h2 class="closing-thank">Շնորհակալություն ❤️</h2>
+              <h2 class="closing-thank" data-aos="fade-up">Շնորհակալություն 🤍</h2>
               <p class="closing-sub">
                 Եթե մասնակցելու եք, միացեք մեր Telegram խմբին<br>
                 որպեսզի կիսվեք լուսանկարներով և տեսանյութերով հարսանիքից։
@@ -287,6 +301,14 @@ window.addEventListener('load', () => {
 });
         
       </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+        duration: 1200,  // Change from 800 to 1200 (or higher)
+        once: false,  // Change from true to false
+        easing: 'ease-in-out'
+      });
+      </script>
       
       
 </body>
@@ -307,10 +329,10 @@ window.addEventListener('load', () => {
                         <feGaussianBlur in="turbulence" stdDeviation="1.4" result="droplet-turbulence"/>
                         <feDisplacementMap in="SourceGraphic" in2="droplet-turbulence" scale="90" result="droplet"/>
                         <feComposite in="droplet" in2="blob" operator="over" result="wax"/>
-                        <feDropShadow in="droplet" dx="-0.3" dy="-0.3" stdDeviation="0" flood-color="#8B4513" flood-opacity="1" result="droplet-highlight"/>
-                        <feDropShadow in="droplet" dx="0.3" dy="0.3" stdDeviation="0" flood-color="#4A2C17" flood-opacity="1" result="droplet-shadow"/>
-                        <feDropShadow in="blob" dx="-0.6" dy="-0.6" stdDeviation="0" flood-color="#8B4513" flood-opacity="1" result="blob-highlight"/>
-                        <feDropShadow in="blob" dx="0.6" dy="0.6" stdDeviation="0" flood-color="#4A2C17" flood-opacity="1" result="blob-shadow"/>
+                        <feDropShadow in="droplet" dx="-0.3" dy="-0.3" stdDeviation="0" flood-color="#0d0e10" flood-opacity="1" result="droplet-highlight"/>
+                        <feDropShadow in="droplet" dx="0.3" dy="0.3" stdDeviation="0" flood-color="#0d0e10" flood-opacity="1" result="droplet-shadow"/>
+                        <feDropShadow in="blob" dx="-0.6" dy="-0.6" stdDeviation="0" flood-color="#0d0e10" flood-opacity="1" result="blob-highlight"/>
+                        <feDropShadow in="blob" dx="0.6" dy="0.6" stdDeviation="0" flood-color="#0d0e10" flood-opacity="1" result="blob-shadow"/>
                         <feMerge>
                             <feMergeNode in="droplet-shadow"/>
                             <feMergeNode in="blob-shadow"/>
@@ -320,18 +342,18 @@ window.addEventListener('load', () => {
                         </feMerge>
                     </filter>
                     <filter id="deboss">
-                        <feDropShadow dx="-0.4" dy="-0.4" stdDeviation="0" flood-color="#4A2C17"/>
-                        <feDropShadow dx="0.4" dy="0.4" stdDeviation="0" flood-color="#8B4513"/>
+                        <feDropShadow dx="-0.4" dy="-0.4" stdDeviation="0" flood-color="#0d0e10"/>
+                        <feDropShadow dx="0.4" dy="0.4" stdDeviation="0" flood-color="#0d0e10"/>
                     </filter>
                     <filter id="emboss">
-                        <feDropShadow dx="0.25" dy="0.25" stdDeviation="0" flood-color="#4A2C17"/>
-                        <feDropShadow dx="-0.25" dy="-0.25" stdDeviation="0" flood-color="#8B4513"/>
+                        <feDropShadow dx="0.25" dy="0.25" stdDeviation="0" flood-color="#0d0e10"/>
+                        <feDropShadow dx="-0.25" dy="-0.25" stdDeviation="0" flood-color="#0d0e10"/>
                     </filter>
                 </defs>
-                <circle cx="50%" cy="50%" r="36%" fill="#654321" filter="url(#wax)"/>
-                <circle cx="50%" cy="50%" r="27%" fill="none" stroke="#654321" stroke-width="1" filter="url(#deboss)"/>
-                <circle cx="50%" cy="50%" r="25.3%" fill="none" stroke="#654321" stroke-width="0.5" filter="url(#emboss)"/>
-                <text x="50%" y="53%" dominant-baseline="middle" text-anchor="middle" fill="#654321" font-family="georgia" font-size="8.5" font-weight="bold" filter="url(#emboss)">Ժ&amp;Ա</text>
+                <circle cx="50%" cy="50%" r="36%" fill="#282728" filter="url(#wax)"/>
+                <circle cx="50%" cy="50%" r="27%" fill="none" stroke="#282728" stroke-width="1" filter="url(#deboss)"/>
+                <circle cx="50%" cy="50%" r="25.3%" fill="none" stroke="#282728" stroke-width="0.5" filter="url(#emboss)"/>
+                <text x="50%" y="53%" dominant-baseline="middle" text-anchor="middle" fill="#4f5052" font-family="georgia" font-size="8.5" font-weight="bold" filter="url(#emboss)">Ժ&amp;Ա</text>
             </svg>
         </div>
     </div>
