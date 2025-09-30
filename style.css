@@ -1,53 +1,52 @@
 /* =======================
    Base & Theme
    ======================= */
-   @font-face { 
-    font-family: 'Vrdznagir'; 
-    src: url('https://cdn.jsdelivr.net/gh/anushtadevosyan/ZA-Wedding@main/fonts/vrdznagir-webfont.woff2') format('woff2');
-    font-weight: 400; 
-    font-style: normal; 
-    font-display: swap; 
-  }
-  
-  @font-face { 
-    font-family: 'ArmGuard'; 
-    src: url('https://cdn.jsdelivr.net/gh/anushtadevosyan/ZA-Wedding@main/fonts/armguardu-webfont.woff2') format('woff2');
-    font-weight: 400; 
-    font-style: normal; 
-    font-display: swap; 
-  }
-  
-  @font-face { 
-    font-family: 'NasaArm'; 
-    src: url('https://cdn.jsdelivr.net/gh/anushtadevosyan/ZA-Wedding@main/fonts/nasafont-webfont.woff2') format('woff2');
-    font-weight: 400; 
-    font-style: normal; 
-    font-display: swap; 
-  }
+   @font-face {
+    font-family: 'mardoto-italic';
+    src: url('fonts/Mardoto-Italic.woff2') format('woff2'),
+         url('fonts/Mardoto-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-   /* @font-face { 
-    font-family: 'Vrdznagir'; 
-    src: url('https://cdn.jsdelivr.net/gh/anushtadevosyan/ZA-Wedding@main/fonts/vrdznagir-webfont.woff2') format('woff2');
-    font-weight: 400; 
-    font-style: normal; 
-    font-display: swap; 
-  }
+}
+
+@font-face {
+  font-family: 'shk_dzeragiritalic';
+  src: url('fonts/shk_dzeragir-webfont.woff2') format('woff2'),
+       url('fonts/shk_dzeragir-webfont.woff') format('woff'),
+       url('fonts/shk_dzeragir-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
   
-  @font-face { 
-    font-family: 'ArmGuard'; 
-    src: url('https://cdn.jsdelivr.net/gh/anushtadevosyan/ZA-Wedding@main/fonts/armguardu-webfont.woff2') format('woff2');
-    font-weight: 400; 
-    font-style: normal; 
-    font-display: swap; 
-  }
+@font-face {
+  font-family: 'vrdznagirregular';
+  src: url('fonts/vrdznagir-webfont.woff2') format('woff2'),
+       url('fonts/vrdznagir-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'new-font';
+  src: url('fonts/arnamu_mono_italic.woff2') format('woff2'),
+       url('fonts/arnamu_mono_italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
   
-  @font-face { 
-    font-family: 'NasaArm'; 
-    src: url('https://cdn.jsdelivr.net/gh/anushtadevosyan/ZA-Wedding@main/fonts/nasafont-webfont.woff2') format('woff2');
-    font-weight: 400; 
-    font-style: normal; 
-    font-display: swap; 
-  } */
+
+@font-face {
+  font-family: 'armguardunormal';
+  src: url('fonts/armguardu-webfont.woff2') format('woff2'),
+       url('fonts/armguardu-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 :root{
     --ink: #2a2a2a;                /* primary text color */
@@ -145,7 +144,8 @@
   
   /* Names styling */
   .content-side h1{
-    font-family: "ArmGuard", "Playfair Display", serif;
+    font-family: "armguardunormal", "Playfair Display", serif;
+    font-style: normal;
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 600;
     letter-spacing: 2px;
@@ -157,12 +157,14 @@
 
 
   .content-side h3.text-with-reflection {
-    font-family: "Vrdznagir", "Dzeragir", sans-serif !important;
+    font-family: "shk_dzeragiritalic", sans-serif !important;
+    font-style: normal;
   }
 
 
   h3.text-with-reflection {
-    font-family: "Vrdznagir", "Dzeragir", sans-serif;
+    font-family: "shk_dzeragiritalic", sans-serif;
+    font-style: normal;
     position: relative;
     z-index: 1;
     margin: 0;
@@ -185,7 +187,8 @@
   }
   
   .friends-fam{
-    font-family: "Dzeragir", "Playfair Display", serif;
+    font-family: "mardoto-italic", "Playfair Display", serif;
+    font-style: normal;
   }
 
   /* Hero intro paragraph */
@@ -350,7 +353,8 @@
   
   /* Title + champagne underline */
   .schedule-title{
-    font-family: "Dzeragir", "Playfair Display", serif;
+    font-family: "mardoto-italic", "Playfair Display", serif;
+    font-style: normal;
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 600;
     text-align: center;
@@ -546,7 +550,8 @@
   }
   .closing-inner{ max-width: 700px; margin: 0 auto }
   .closing-thank{
-    font-family: "Dzeragir","Playfair Display", serif;
+    font-family: "mardoto-italic","Playfair Display", serif;
+    font-style: normal;
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 700;
     color: var(--ink);
@@ -708,8 +713,9 @@
   
   .spasum {
     position: relative;
-    height: 100px;
-    font-family: "Vrdznagir", "Dzeragir", sans-serif;
+    height: 130px;
+    font-family: "mardoto-italic", sans-serif;
+    font-style: normal;
   }
   .spasum h3{
     position: absolute;
@@ -717,7 +723,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "Vrdznagir", "Dzeragir", sans-serif;
+    font-family: "mardoto-italic", sans-serif;
+    font-style: normal;
   }
 
   .vicon {
@@ -1153,3 +1160,6 @@
 
 
 
+/* * {
+  font-family: "shk_dzeragiritalic" !important;
+} */
