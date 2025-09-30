@@ -4,6 +4,10 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+    <link rel="preload" href="fonts/shk_dzeragir-webfont.woff2?v=2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/vrdznagir-webfont.woff2?v=2"     as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/armguardu-webfont.woff2?v=2"    as="font" type="font/woff2" crossorigin>
+
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,7 +20,8 @@
 <body>
     <section class="hero">
         <div class="video-side">
-          <video id="heroVideo" src="media/teaser_bw.mp4" autoplay muted loop playsinline></video>
+          <!-- <video id="heroVideo" src="media/teaser_bw.mp4" autoplay muted loop playsinline></video> -->
+          <video id="heroVideo" src="media/teaser_bw.mp4" autoplay muted loop="true" playsinline="true"></video>
           <button id="soundBtn" class="sound-btn">🔊 Sound On</button>
         </div>
         <div class="content-side">
@@ -41,8 +46,14 @@
             <div class="cd-sep">:</div>
             <div class="cd-box"><span class="cd-num" id="cd-secs">0</span><span class="cd-label">Վայրկյան</span></div>
             </div>
+            <div class="cd-ornament">
+            <img src="media/transparent_1759181939_6030.svg?v=2" alt="Infinity ornament">
+          </div>
+            
 
             <p id="cd-message" class="cd-message" hidden>Այսօր է! 💍</p>
+            
+
 
           </div> 
       </section> 
@@ -111,7 +122,7 @@
                         <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1118 0z"/>
                         <circle cx="12" cy="10" r="3"/>
                       </svg>
-                      📍 Liana Garden Hall
+                      📍 Lianna Garden Hall
                     </a>
                   </p>
               </div>
@@ -174,7 +185,7 @@
           
           <section class="closing">
             <div class="closing-inner">
-              <h2 class="closing-thank" data-aos="fade-up">Շնորհակալություն 🤍</h2>
+              <h2 class="closing-thank" data-aos="fade-up">Շնորհակալություն 🩶</h2>
               <p class="closing-sub">
                 Եթե մասնակցելու եք, միացեք մեր Telegram խմբին<br>
                 որպեսզի կիսվեք լուսանկարներով և տեսանյութերով հարսանիքից։
